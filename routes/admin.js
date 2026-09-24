@@ -16,10 +16,10 @@ function logincheck (req,res,next){
 var mysql=require('mysql2');
 router.use(express.urlencoded({extended:true}));
 var conn=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'root',
-    database:'simone'
+    host:'bcqygvtqwzyswzekpoxm-mysql.services.clever-cloud.com',
+    user:'uixfddxinj9x9sx9',
+    password:'zoliueybiWN6Mo930aLD',
+    database:'bcqygvtqwzyswzekpoxm'
 })
 var exe=util.promisify(conn.query).bind(conn);
 router.use(express.static('public'));

@@ -1,0 +1,38 @@
+<%-include('header.ejs');%>
+
+      <div class="main">
+        <header class="topbar">
+          <h2>Add Skills record</h2>
+          <div class="user">Welcome, Admin</div>
+        </header>
+
+        <section class="content">
+          <div class="panel">
+            <h3>Skills form</h3>
+
+            <form class="form" action="/admin/skills_save" method="post">
+              <div class="row">
+                <div class="field">
+                  <label for="name"> Technology </label>
+                  <input id="name" type="text" name="s_tech"/>
+                </div>
+                <div class="field">
+                  <label for="text"> Percentage</label>
+                  <input id="text" type="text" name="s_per"  />
+                </div>
+              </div>
+
+            
+
+              
+
+              <div class="actions">
+                <button class="btn" type="submit">Save</button>
+                <button class="btn btn-ghost" type="reset">Clear</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <%-include('footer.ejs');%>

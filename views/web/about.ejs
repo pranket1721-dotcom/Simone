@@ -1,0 +1,33 @@
+<%-include('header.ejs');%>
+<section class="section about" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-bg-title">About Me</div>
+          <h2 class="section-title">Know Me More</h2>
+        </div>
+        <div class="about__grid">
+          <div>
+            <h3> <em><%=data.a_title%></em></h3>
+            <p>
+              <%=data.a_desc%>
+          
+            </p>
+            
+            <ul class="about-meta">
+              <li><strong>Name:</strong>  <%=data.a_name%></li>
+              <li><strong>Email:</strong>   <%=data.a_email%></li>
+              <li><strong>Age:</strong>   <%=data.a_age%></li>
+              <li><strong>From:</strong>  <%=data.a_address%></li>
+            </ul>
+            <a class="btn btn--accent" href="#">Download CV</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><h3> <%=data.a_count_experience%></h3></div>
+            <div class="stat"><h3><%=data.a_count_project%></h3></div>
+            <div class="stat"><h1><%=data.a_count_clients%></h3></div>
+            <div class="stat"><h1><%=data.a_count_awards%></h3></div>
+          </div>
+        </div>
+      </div>
+    </section>
+<%-include('footer.ejs');%>

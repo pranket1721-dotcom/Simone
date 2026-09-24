@@ -1,0 +1,46 @@
+<%-include('header.ejs');%>
+
+      <div class="main">
+        <header class="topbar">
+          <h2>Add Experience record</h2>
+          <div class="user">Welcome, Admin</div>
+        </header>
+
+        <section class="content">
+          <div class="panel">
+            <h3>Experience form</h3>
+
+            <form class="form" action="/admin/experience_save" method="post">
+              <div class="row">
+                <div class="field">
+                  <label for="name"> Year </label>
+                  <input id="name" type="text" name="e_year"/>
+                </div>
+                <div class="field">
+                  <label for="text"> Position</label>
+                  <input id="text" type="text" name="e_position"  />
+                </div>
+              </div>
+
+            
+
+              <div class="field">
+                <label for="notes"> Company</label>
+                <textarea id="text" name="e_company" placeholder="University name..."></textarea>
+              </div>
+
+              <div class="field">
+                <label for="notes"> Description</label>
+                <textarea id="notes" name="e_desc" placeholder="short note..."></textarea>
+              </div>
+
+              <div class="actions">
+                <button class="btn" type="submit">Save</button>
+                <button class="btn btn-ghost" type="reset">Clear</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <%-include('footer.ejs');%>

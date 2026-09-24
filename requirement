@@ -1,0 +1,27 @@
+update-1 home
+image,title1,title2,title3,title4,desc
+
+update-2
+title,desc,name,email,age,address,resume,pdf,count title ,count no,count tile,count no
+
+crud-1 services
+icons,title,desc
+
+crud-2 education
+year,degree,uni,desc
+
+crud-3 experience
+year,posi,comp,desc
+
+crud-4 skills
+tech,per
+
+crud-5 my work
+image,title,desc
+
+crud-6 client
+msg,photo,name,position
+
+
+update-3 contact
+address,mobile,email,fc,ins,you,tw
